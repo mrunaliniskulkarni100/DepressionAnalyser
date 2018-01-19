@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.mitcoe.ishanjoshi.depressionanalyser.MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/ImageButtonStartRecording"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AUDIO RECORDER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play_circle_filled_black_48dp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="147dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="59dp"
-        android:layout_marginEnd="344dp"
-        android:layout_marginStart="345dp"
-        android:layout_marginTop="166dp"
-        android:text="START RECORDING"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
+    <ImageButton
+        android:id="@+id/ImageButtonStopRecording"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
-        android:layout_marginEnd="348dp"
-        android:layout_marginStart="349dp"
-        android:layout_marginTop="75dp"
-        android:text="STOP RECORDING"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:background="@android:color/transparent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_stop_black_48dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

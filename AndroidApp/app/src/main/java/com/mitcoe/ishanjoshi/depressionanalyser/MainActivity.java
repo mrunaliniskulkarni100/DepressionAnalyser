@@ -7,12 +7,14 @@ import android.media.MediaRecorder;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -20,8 +22,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonStartRecord;
-    private Button buttonStopRecord;
+    private ImageButton buttonStartRecord;
+    private ImageButton buttonStopRecord;
     String FilePathName = null;
     MediaRecorder mediaRecorder;
     Random random;
@@ -50,8 +52,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
 
-        buttonStartRecord = findViewById(R.id.button1);
-        buttonStopRecord = findViewById(R.id.button2);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Audio Recorder");
+
+        buttonStartRecord = findViewById(R.id.ImageButtonStartRecording);
+        buttonStopRecord = findViewById(R.id.ImageButtonStopRecording);
         buttonStopRecord.setEnabled(false);
 
         random = new Random();
