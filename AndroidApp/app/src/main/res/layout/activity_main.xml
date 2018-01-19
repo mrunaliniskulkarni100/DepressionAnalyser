@@ -7,12 +7,12 @@
     tools:context="com.mitcoe.ishanjoshi.depressionanalyser.MainActivity">
 
     <ImageButton
-        android:layout_weight="1"
         android:id="@+id/ImageButtonStartRecording"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_weight="1"
         android:background="@android:color/transparent"
-        android:src="@drawable/ic_play_circle_filled_black_48dp" />
+        android:src="@drawable/ic_mic_black_48dp" />
 
     <ImageButton
         android:id="@+id/ImageButtonStopRecording"
@@ -21,5 +21,20 @@
         android:background="@android:color/transparent"
         android:layout_weight="1"
         android:src="@drawable/ic_stop_black_48dp" />
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/ImageButtonStartPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play_circle_filled_black_48dp" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/ImageButtonStopPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_pause_circle_filled_black_48dp" />
 
 </LinearLayout>
