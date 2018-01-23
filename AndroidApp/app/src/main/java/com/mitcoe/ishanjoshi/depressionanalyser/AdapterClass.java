@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.List;
 
 
-public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder>{
+public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> {
     private List<FileDataClass> FileDataList;
 
     public AdapterClass(List<FileDataClass> inputFilePathList) {
@@ -18,7 +18,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder>{
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
         return new ViewHolder(v);
     }
 
@@ -35,9 +35,10 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView FileData;
+
         public ViewHolder(View itemView) {
             super(itemView);
-            FileData = (TextView)itemView.findViewById(R.id.itemLayout);
+            FileData = (TextView) itemView.findViewById(R.id.itemLayout);
         }
     }
 }
